@@ -21,14 +21,22 @@ console.log('-----------------------------------');
 
 //2. Створіть змінну довільного типу. Проведіть наступні перетворення з нею:
 
-let arb;
-console.log(typeof arb);
+let primaryValue = 33;
 
-arb = 'string';
-console.log(typeof arb);
+console.log('Початкове значення:', primaryValue);
+console.log('Початковий тип:', typeof changeableValue);
 
-arb = 10;
-console.log(typeof arb);
+// Перетворення на рядок
+let stringValue = String(primaryValue);
+console.log('Перетворення на рядок:', stringValue);
+console.log('Тип після перетворення:', typeof stringValue);
 
-arb = true;
-console.log(typeof arb);
+// Перетворення на число
+let numberValue = Number(primaryValue);
+console.log('Перетворення на число:', numberValue);
+console.log('Тип після перетворення:', typeof numberValue);
+
+// Перетворення на булеве значення
+let booleanValue = !!primaryValue;
+console.log('Перетворення на булеве значення:', booleanValue);
+console.log('Тип після перетворення:', typeof booleanValue);
