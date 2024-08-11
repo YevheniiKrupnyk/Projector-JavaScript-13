@@ -41,7 +41,6 @@ function durationBetweenDates(startDate = '01 Jan 2000', endDate = '11 Aug 2024'
       return 'Invalid dimension. Need "days", "hours", "minutes", or "seconds"';
   }
 
-  // Повертаємо результат у вказаному форматі
   return `${period} ${dimension}`;
 }
 
